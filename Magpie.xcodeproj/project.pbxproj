@@ -7,186 +7,203 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B293DE4C2CF085F687F24BC /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6324A3523E3894B2C7D71D5 /* Store.swift */; };
-		0B9A652358FA3456DC15111A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C34FAAA4C22B112393A9369 /* AppDelegate.swift */; };
-		368F26425E5E48180CB88794 /* Pasteboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADD884B100FD49143F81EDE /* Pasteboard.swift */; };
-		3835CDE4D5B693BB34151BC2 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8E7C885E6EFABD1567605 /* HistoryView.swift */; };
-		BE50F033AD7A49BB52340BCA /* StoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200CA7E5825E2215DC3AB8BB /* StoreTests.swift */; };
-		CBEE9B37F4AABE306860DA09 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB735DF42AE51FFEF226103B /* main.swift */; };
+		0AF25494049A8B44EFE4D784 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D83E921E9CDEF3034F55D3 /* AppDelegate.swift */; };
+		1323E7B2E204E70D8635D1BD /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B3E106F4F8584025D0D1C1 /* main.swift */; };
+		1D906A57CDB5283343098338 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258B5301B47005C82E6433D6 /* Store.swift */; };
+		2E2EA6998812876753172984 /* StoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F7F9A3D69E8A0BD273D5E /* StoreTests.swift */; };
+		8AC4517C83B8C34C5A561350 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5632F5D9C2B4AFD25FA426 /* HistoryView.swift */; };
+		A192B4DEC840E526F12D1835 /* Pasteboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4528615A604697A7A9F755A /* Pasteboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0C78E22CC6FEB2F7D9822880 /* PBXContainerItemProxy */ = {
+		2232E1B43AEA39D6A85DAE20 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EBE4346930DBA45694A8E282 /* Project object */;
+			containerPortal = CCF8A1AA1C55E2276798D7A0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2983B4796F3C81446C227B7F;
-			remoteInfo = Clipboard;
+			remoteGlobalIDString = FAB15C743361DC8CAE771784;
+			remoteInfo = Magpie;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		200CA7E5825E2215DC3AB8BB /* StoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTests.swift; sourceTree = "<group>"; };
-		6C34FAAA4C22B112393A9369 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A6324A3523E3894B2C7D71D5 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
-		AB735DF42AE51FFEF226103B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		D8BCA595EED923DEDFC8DE18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		E4A8E7C885E6EFABD1567605 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
-		E666992B7E86AFDFE7DC8EB3 /* ClipboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClipboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E979BC7A378A4D405BD5B62E /* Clipboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clipboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EADD884B100FD49143F81EDE /* Pasteboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pasteboard.swift; sourceTree = "<group>"; };
+		0B5632F5D9C2B4AFD25FA426 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		1188540642C28FE067DE376D /* MagpieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagpieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B7C6DDC7D71C97047AEDB8C /* Magpie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Magpie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24B3E106F4F8584025D0D1C1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		258B5301B47005C82E6433D6 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		B4528615A604697A7A9F755A /* Pasteboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pasteboard.swift; sourceTree = "<group>"; };
+		BC0F7F9A3D69E8A0BD273D5E /* StoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTests.swift; sourceTree = "<group>"; };
+		F6D83E921E9CDEF3034F55D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FE2A61B6839BD5F4F519BA9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		5DCED1FD9BDED2E0E619E259 /* Tests */ = {
+		3A93DB2858A70B0261D0F76E /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				200CA7E5825E2215DC3AB8BB /* StoreTests.swift */,
+				F6D83E921E9CDEF3034F55D3 /* AppDelegate.swift */,
+				0B5632F5D9C2B4AFD25FA426 /* HistoryView.swift */,
+				FE2A61B6839BD5F4F519BA9A /* Info.plist */,
+				24B3E106F4F8584025D0D1C1 /* main.swift */,
+				B4528615A604697A7A9F755A /* Pasteboard.swift */,
+				258B5301B47005C82E6433D6 /* Store.swift */,
 			);
-			path = Tests;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		7A45A6D2ECCF76BEC74449E5 = {
+		6FA7DC1D53FD2BCF071E90B5 = {
 			isa = PBXGroup;
 			children = (
-				BFC8D08ADC4F7E277F790102 /* Sources */,
-				5DCED1FD9BDED2E0E619E259 /* Tests */,
-				A66139A1FA439632B46BF332 /* Products */,
+				3A93DB2858A70B0261D0F76E /* Sources */,
+				F8330C18FEF5E3C798654CA8 /* Tests */,
+				949197DB4BAEC6C4EFAC08F8 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A66139A1FA439632B46BF332 /* Products */ = {
+		949197DB4BAEC6C4EFAC08F8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E979BC7A378A4D405BD5B62E /* Clipboard.app */,
-				E666992B7E86AFDFE7DC8EB3 /* ClipboardTests.xctest */,
+				1B7C6DDC7D71C97047AEDB8C /* Magpie.app */,
+				1188540642C28FE067DE376D /* MagpieTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BFC8D08ADC4F7E277F790102 /* Sources */ = {
+		F8330C18FEF5E3C798654CA8 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				6C34FAAA4C22B112393A9369 /* AppDelegate.swift */,
-				E4A8E7C885E6EFABD1567605 /* HistoryView.swift */,
-				D8BCA595EED923DEDFC8DE18 /* Info.plist */,
-				AB735DF42AE51FFEF226103B /* main.swift */,
-				EADD884B100FD49143F81EDE /* Pasteboard.swift */,
-				A6324A3523E3894B2C7D71D5 /* Store.swift */,
+				BC0F7F9A3D69E8A0BD273D5E /* StoreTests.swift */,
 			);
-			path = Sources;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		20EF49727FAC8885F2582171 /* ClipboardTests */ = {
+		63D9C1634A652D762AF4BDE4 /* MagpieTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 58CAF6CBF767E6DB7F27C33C /* Build configuration list for PBXNativeTarget "ClipboardTests" */;
+			buildConfigurationList = C1B2B9F1BCF218E538091FE9 /* Build configuration list for PBXNativeTarget "MagpieTests" */;
 			buildPhases = (
-				37D8A91AF85F6C82965A4B18 /* Sources */,
+				64110F08A9E209F80603909C /* Sources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C5ACEA89A5D513D29A761C22 /* PBXTargetDependency */,
+				EA6EB1C956D37C7697ACADFC /* PBXTargetDependency */,
 			);
-			name = ClipboardTests;
+			name = MagpieTests;
 			packageProductDependencies = (
 			);
-			productName = ClipboardTests;
-			productReference = E666992B7E86AFDFE7DC8EB3 /* ClipboardTests.xctest */;
+			productName = MagpieTests;
+			productReference = 1188540642C28FE067DE376D /* MagpieTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2983B4796F3C81446C227B7F /* Clipboard */ = {
+		FAB15C743361DC8CAE771784 /* Magpie */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4AF9AD7C5DCA5126695F8410 /* Build configuration list for PBXNativeTarget "Clipboard" */;
+			buildConfigurationList = 68D94158CF2474557D86C0AD /* Build configuration list for PBXNativeTarget "Magpie" */;
 			buildPhases = (
-				AA8C5A5B66BA0D2CFAED1D9F /* Sources */,
+				B68FCA56FEA15742558D5547 /* Sources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Clipboard;
+			name = Magpie;
 			packageProductDependencies = (
 			);
-			productName = Clipboard;
-			productReference = E979BC7A378A4D405BD5B62E /* Clipboard.app */;
+			productName = Magpie;
+			productReference = 1B7C6DDC7D71C97047AEDB8C /* Magpie.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		EBE4346930DBA45694A8E282 /* Project object */ = {
+		CCF8A1AA1C55E2276798D7A0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					20EF49727FAC8885F2582171 = {
+					63D9C1634A652D762AF4BDE4 = {
 						DevelopmentTeam = 3GHX277DW6;
 						ProvisioningStyle = Manual;
 					};
-					2983B4796F3C81446C227B7F = {
+					FAB15C743361DC8CAE771784 = {
 						DevelopmentTeam = 3GHX277DW6;
 						ProvisioningStyle = Manual;
 					};
 				};
 			};
-			buildConfigurationList = C520096EB6E421142DE70746 /* Build configuration list for PBXProject "Clipboard" */;
+			buildConfigurationList = 1AB47D8643EC2433FB19EBB1 /* Build configuration list for PBXProject "Magpie" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				Base,
 				en,
 			);
-			mainGroup = 7A45A6D2ECCF76BEC74449E5;
+			mainGroup = 6FA7DC1D53FD2BCF071E90B5;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = A66139A1FA439632B46BF332 /* Products */;
+			productRefGroup = 949197DB4BAEC6C4EFAC08F8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2983B4796F3C81446C227B7F /* Clipboard */,
-				20EF49727FAC8885F2582171 /* ClipboardTests */,
+				FAB15C743361DC8CAE771784 /* Magpie */,
+				63D9C1634A652D762AF4BDE4 /* MagpieTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		37D8A91AF85F6C82965A4B18 /* Sources */ = {
+		64110F08A9E209F80603909C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE50F033AD7A49BB52340BCA /* StoreTests.swift in Sources */,
+				2E2EA6998812876753172984 /* StoreTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AA8C5A5B66BA0D2CFAED1D9F /* Sources */ = {
+		B68FCA56FEA15742558D5547 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B9A652358FA3456DC15111A /* AppDelegate.swift in Sources */,
-				3835CDE4D5B693BB34151BC2 /* HistoryView.swift in Sources */,
-				368F26425E5E48180CB88794 /* Pasteboard.swift in Sources */,
-				0B293DE4C2CF085F687F24BC /* Store.swift in Sources */,
-				CBEE9B37F4AABE306860DA09 /* main.swift in Sources */,
+				0AF25494049A8B44EFE4D784 /* AppDelegate.swift in Sources */,
+				8AC4517C83B8C34C5A561350 /* HistoryView.swift in Sources */,
+				A192B4DEC840E526F12D1835 /* Pasteboard.swift in Sources */,
+				1D906A57CDB5283343098338 /* Store.swift in Sources */,
+				1323E7B2E204E70D8635D1BD /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C5ACEA89A5D513D29A761C22 /* PBXTargetDependency */ = {
+		EA6EB1C956D37C7697ACADFC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2983B4796F3C81446C227B7F /* Clipboard */;
-			targetProxy = 0C78E22CC6FEB2F7D9822880 /* PBXContainerItemProxy */;
+			target = FAB15C743361DC8CAE771784 /* Magpie */;
+			targetProxy = 2232E1B43AEA39D6A85DAE20 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		83000F200635DF0DDA04C036 /* Debug */ = {
+		4C772015F09F00788FA2724E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.truthofmatthew.MagpieTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Magpie.app/Contents/MacOS/Magpie";
+			};
+			name = Debug;
+		};
+		607858AD17BF89108D62C24B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -197,12 +214,12 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.truthofmatthew.Clipboard;
+				PRODUCT_BUNDLE_IDENTIFIER = com.truthofmatthew.Magpie;
 				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
-		909DD1D2B63FCD34F2013F55 /* Release */ = {
+		934D305B43B06CFA815FBEE9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -263,7 +280,23 @@
 			};
 			name = Release;
 		};
-		945F64056087025C6705C691 /* Debug */ = {
+		9ED467995E2BCE0CB17170B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Sources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.truthofmatthew.Magpie;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A1C956E7530C1E72ADDF10A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -331,23 +364,7 @@
 			};
 			name = Debug;
 		};
-		A70465D38D2593C30E9C04C8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
-				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = Sources/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.truthofmatthew.Clipboard;
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-		D106E4BF6C94EFA81B0FA68C /* Release */ = {
+		F4532E775373715542778B83 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -358,60 +375,43 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.truthofmatthew.ClipboardTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.truthofmatthew.MagpieTests;
 				SDKROOT = macosx;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clipboard.app/Contents/MacOS/Clipboard";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Magpie.app/Contents/MacOS/Magpie";
 			};
 			name = Release;
-		};
-		F7DADB128FABE518AA3D0A4B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.truthofmatthew.ClipboardTests;
-				SDKROOT = macosx;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clipboard.app/Contents/MacOS/Clipboard";
-			};
-			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4AF9AD7C5DCA5126695F8410 /* Build configuration list for PBXNativeTarget "Clipboard" */ = {
+		1AB47D8643EC2433FB19EBB1 /* Build configuration list for PBXProject "Magpie" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				83000F200635DF0DDA04C036 /* Debug */,
-				A70465D38D2593C30E9C04C8 /* Release */,
+				A1C956E7530C1E72ADDF10A8 /* Debug */,
+				934D305B43B06CFA815FBEE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		58CAF6CBF767E6DB7F27C33C /* Build configuration list for PBXNativeTarget "ClipboardTests" */ = {
+		68D94158CF2474557D86C0AD /* Build configuration list for PBXNativeTarget "Magpie" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F7DADB128FABE518AA3D0A4B /* Debug */,
-				D106E4BF6C94EFA81B0FA68C /* Release */,
+				607858AD17BF89108D62C24B /* Debug */,
+				9ED467995E2BCE0CB17170B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		C520096EB6E421142DE70746 /* Build configuration list for PBXProject "Clipboard" */ = {
+		C1B2B9F1BCF218E538091FE9 /* Build configuration list for PBXNativeTarget "MagpieTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				945F64056087025C6705C691 /* Debug */,
-				909DD1D2B63FCD34F2013F55 /* Release */,
+				4C772015F09F00788FA2724E /* Debug */,
+				F4532E775373715542778B83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = EBE4346930DBA45694A8E282 /* Project object */;
+	rootObject = CCF8A1AA1C55E2276798D7A0 /* Project object */;
 }

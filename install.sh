@@ -4,11 +4,11 @@ set -euo pipefail
 cd "$(dirname "$0")"
 
 xcodegen generate --quiet
-xcodebuild -project Clipboard.xcodeproj -scheme Clipboard -configuration Release \
+xcodebuild -project Magpie.xcodeproj -scheme Magpie -configuration Release \
   -derivedDataPath build -quiet build
 
-pkill -x Clipboard || true
-rm -rf /Applications/Clipboard.app
-ditto build/Build/Products/Release/Clipboard.app /Applications/Clipboard.app
-open /Applications/Clipboard.app
+pkill -x Magpie || true
+rm -rf /Applications/Magpie.app
+ditto build/Build/Products/Release/Magpie.app /Applications/Magpie.app
+open /Applications/Magpie.app
 echo "Installed. Press ⌥⌘V to open the history."

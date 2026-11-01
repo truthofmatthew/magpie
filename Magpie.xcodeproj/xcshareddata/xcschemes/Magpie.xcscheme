@@ -15,10 +15,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2983B4796F3C81446C227B7F"
-               BuildableName = "Clipboard.app"
-               BlueprintName = "Clipboard"
-               ReferencedContainer = "container:Clipboard.xcodeproj">
+               BlueprintIdentifier = "FAB15C743361DC8CAE771784"
+               BuildableName = "Magpie.app"
+               BlueprintName = "Magpie"
+               ReferencedContainer = "container:Magpie.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,10 +29,10 @@
             buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "20EF49727FAC8885F2582171"
-               BuildableName = "ClipboardTests.xctest"
-               BlueprintName = "ClipboardTests"
-               ReferencedContainer = "container:Clipboard.xcodeproj">
+               BlueprintIdentifier = "63D9C1634A652D762AF4BDE4"
+               BuildableName = "MagpieTests.xctest"
+               BlueprintName = "MagpieTests"
+               ReferencedContainer = "container:Magpie.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,10 +46,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2983B4796F3C81446C227B7F"
-            BuildableName = "Clipboard.app"
-            BlueprintName = "Clipboard"
-            ReferencedContainer = "container:Clipboard.xcodeproj">
+            BlueprintIdentifier = "FAB15C743361DC8CAE771784"
+            BuildableName = "Magpie.app"
+            BlueprintName = "Magpie"
+            ReferencedContainer = "container:Magpie.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -58,10 +58,10 @@
             parallelizable = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "20EF49727FAC8885F2582171"
-               BuildableName = "ClipboardTests.xctest"
-               BlueprintName = "ClipboardTests"
-               ReferencedContainer = "container:Clipboard.xcodeproj">
+               BlueprintIdentifier = "63D9C1634A652D762AF4BDE4"
+               BuildableName = "MagpieTests.xctest"
+               BlueprintName = "MagpieTests"
+               ReferencedContainer = "container:Magpie.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -82,10 +82,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2983B4796F3C81446C227B7F"
-            BuildableName = "Clipboard.app"
-            BlueprintName = "Clipboard"
-            ReferencedContainer = "container:Clipboard.xcodeproj">
+            BlueprintIdentifier = "FAB15C743361DC8CAE771784"
+            BuildableName = "Magpie.app"
+            BlueprintName = "Magpie"
+            ReferencedContainer = "container:Magpie.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -99,10 +99,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2983B4796F3C81446C227B7F"
-            BuildableName = "Clipboard.app"
-            BlueprintName = "Clipboard"
-            ReferencedContainer = "container:Clipboard.xcodeproj">
+            BlueprintIdentifier = "FAB15C743361DC8CAE771784"
+            BuildableName = "Magpie.app"
+            BlueprintName = "Magpie"
+            ReferencedContainer = "container:Magpie.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

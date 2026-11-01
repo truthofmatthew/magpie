@@ -1,6 +1,6 @@
 import AppKit
 import XCTest
-@testable import Clipboard
+@testable import Magpie
 
 final class StoreTests: XCTestCase {
     private var dir: URL!

@@ -69,7 +69,7 @@ final class Store: ObservableObject {
             if let rtf { try rtf.write(to: payloadURL(item, "rtf")) }
             if let png { try png.write(to: payloadURL(item, "png")) }
         } catch {
-            NSLog("Clipboard: could not save payload: \(error)")
+            NSLog("Magpie: could not save payload: \(error)")
             return
         }
         items.insert(item, at: 0)
@@ -139,7 +139,7 @@ final class Store: ObservableObject {
         do {
             try JSONEncoder().encode(items).write(to: indexURL, options: .atomic)
         } catch {
-            NSLog("Clipboard: could not save history: \(error)")
+            NSLog("Magpie: could not save history: \(error)")
         }
     }
 }

@@ -5,7 +5,7 @@ import SwiftUI
 
 final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate, NSWindowDelegate {
     private let store = Store(dir: FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0]
-        .appendingPathComponent("Clipboard"))
+        .appendingPathComponent("Magpie"))
     private lazy var monitor = Monitor(store: store)
     private lazy var model = PanelModel(store: store)
     private var panel: NSPanel!
@@ -35,7 +35,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate, NSWind
         panel.contentView = hosting
 
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
-        statusItem.button?.image = NSImage(systemSymbolName: "list.clipboard", accessibilityDescription: "Clipboard")
+        statusItem.button?.image = NSImage(systemSymbolName: "list.clipboard", accessibilityDescription: "Magpie")
         statusItem.menu = NSMenu()
         statusItem.menu?.delegate = self
 
@@ -170,7 +170,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate, NSWind
         login.state = SMAppService.mainApp.status == .enabled ? .on : .off
         menu.addItem(withTitle: "Clear History…", action: #selector(clearHistory), keyEquivalent: "")
         menu.addItem(.separator())
-        menu.addItem(withTitle: "Quit Clipboard", action: #selector(NSApp.terminate(_:)), keyEquivalent: "q")
+        menu.addItem(withTitle: "Quit Magpie", action: #selector(NSApp.terminate(_:)), keyEquivalent: "q")
         for item in menu.items where item.action != #selector(NSApp.terminate(_:)) { item.target = self }
     }
 
