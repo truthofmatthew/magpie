@@ -1,5 +1,6 @@
 import AppKit
 import Carbon.HIToolbox
+import Combine
 import ServiceManagement
 import SwiftUI
 
@@ -12,6 +13,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate, NSWind
     private var statusItem: NSStatusItem!
     private var keyMonitor: Any?
     private var hotKey: EventHotKeyRef?
+    private var countWatcher: AnyCancellable?
 
     func applicationDidFinishLaunching(_ notification: Notification) {
         // Unit tests run inside this app; don't start the real clipboard machinery for them.
@@ -36,8 +38,14 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate, NSWind
         hosting.sizingOptions = []  // the panel sets its own size; don't let SwiftUI add title bar height
         panel.contentView = hosting
 
-        statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
+        statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
         statusItem.button?.image = NSImage(systemSymbolName: "list.clipboard", accessibilityDescription: "Magpie")
+        statusItem.button?.imagePosition = .imageLeading
+        statusItem.button?.font = .monospacedDigitSystemFont(ofSize: NSFont.smallSystemFontSize, weight: .medium)
+        countWatcher = store.$items.sink { [weak self] items in
+            self?.statusItem.button?.title = items.isEmpty ? "" : "\(items.count)"
+            self?.statusItem.button?.setAccessibilityLabel("Magpie, \(items.count) items")
+        }
         statusItem.menu = NSMenu()
         statusItem.menu?.delegate = self
 
