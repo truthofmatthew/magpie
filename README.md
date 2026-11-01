@@ -33,7 +33,7 @@ Clicking an item pastes it too. Opening Magpie from Spotlight also shows the his
 
 Copying something that's already in the history moves it back to the top instead of adding a duplicate.
 
-History holds the last **500** items or **30 days**, whichever runs out first, and images are capped at **300 MB** in total. Pinned items are never removed automatically.
+By default, history holds the last **500** items or **30 days**, whichever runs out first, and images are capped at **300 MB** in total. You can change the item count from the menu bar icon under **Keep Last** (25 to 1,000). Pinned items are never removed automatically and don't count toward the limit.
 
 ## Privacy
 

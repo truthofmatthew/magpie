@@ -105,6 +105,11 @@ final class Monitor {
 }
 
 enum Settings {
+    static var maxItems: Int {
+        get { UserDefaults.standard.object(forKey: "maxItems") as? Int ?? 500 }
+        set { UserDefaults.standard.set(newValue, forKey: "maxItems") }
+    }
+
     /// Bundle ID → app name.
     static var ignoredApps: [String: String] {
         get { UserDefaults.standard.dictionary(forKey: "ignoredApps") as? [String: String] ?? [:] }

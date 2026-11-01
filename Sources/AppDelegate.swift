@@ -17,6 +17,8 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate, NSWind
         // Unit tests run inside this app; don't start the real clipboard machinery for them.
         guard ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] == nil else { return }
 
+        store.maxItems = Settings.maxItems
+        store.prune()
         monitor.start()
         model.choose = { [weak self] item, mode in self?.choose(item, mode) }
 
@@ -166,6 +168,15 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate, NSWind
             menu.addItem(withTitle: "Ignored Apps", action: nil, keyEquivalent: "").submenu = submenu
         }
 
+        let sizes = NSMenu()
+        for size in [25, 50, 100, 250, 500, 1000] {
+            let item = sizes.addItem(withTitle: "\(size) Items", action: #selector(setHistorySize(_:)), keyEquivalent: "")
+            item.tag = size
+            item.state = size == store.maxItems ? .on : .off
+            item.target = self
+        }
+        menu.addItem(withTitle: "Keep Last", action: nil, keyEquivalent: "").submenu = sizes
+
         let login = menu.addItem(withTitle: "Launch at Login", action: #selector(toggleLogin), keyEquivalent: "")
         login.state = SMAppService.mainApp.status == .enabled ? .on : .off
         menu.addItem(withTitle: "Clear History…", action: #selector(clearHistory), keyEquivalent: "")
@@ -179,6 +190,24 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate, NSWind
         var ignored = Settings.ignoredApps
         ignored[pair[0]] = ignored[pair[0]] == nil ? pair[1] : nil
         Settings.ignoredApps = ignored
+    }
+
+    @objc private func setHistorySize(_ sender: NSMenuItem) {
+        let size = sender.tag
+        let extra = store.items.filter { !$0.pinned }.count - size
+        if extra > 0 {
+            NSApp.activate()
+            let alert = NSAlert()
+            alert.messageText = "Keep only the last \(size) items?"
+            alert.informativeText = "This deletes your \(extra) oldest items now. Pinned items are kept."
+            alert.addButton(withTitle: "Delete \(extra) Items")
+            alert.addButton(withTitle: "Cancel")
+            alert.buttons[0].hasDestructiveAction = true
+            guard alert.runModal() == .alertFirstButtonReturn else { return }
+        }
+        Settings.maxItems = size
+        store.maxItems = size
+        store.prune()
     }
 
     @objc private func toggleLogin() {
