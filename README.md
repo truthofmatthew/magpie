@@ -1,3 +1,5 @@
+<p align="center"><img src="docs/icon.png" width="160" alt="Magpie app icon: a stack of white cards with a gold sparkle on a blue-to-teal background"></p>
+
 # Magpie
 
 A small clipboard history for macOS. It remembers what you copy (text, screenshots, images, files) and lets you paste any of it back with a couple of keystrokes.

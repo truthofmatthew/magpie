@@ -11,6 +11,7 @@
 		1323E7B2E204E70D8635D1BD /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B3E106F4F8584025D0D1C1 /* main.swift */; };
 		1D906A57CDB5283343098338 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258B5301B47005C82E6433D6 /* Store.swift */; };
 		2E2EA6998812876753172984 /* StoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F7F9A3D69E8A0BD273D5E /* StoreTests.swift */; };
+		342381E04642F15D25C7819A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D158492CFB91D20B0C4C4BA2 /* Assets.xcassets */; };
 		8AC4517C83B8C34C5A561350 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5632F5D9C2B4AFD25FA426 /* HistoryView.swift */; };
 		A192B4DEC840E526F12D1835 /* Pasteboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4528615A604697A7A9F755A /* Pasteboard.swift */; };
 /* End PBXBuildFile section */
@@ -33,6 +34,7 @@
 		258B5301B47005C82E6433D6 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		B4528615A604697A7A9F755A /* Pasteboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pasteboard.swift; sourceTree = "<group>"; };
 		BC0F7F9A3D69E8A0BD273D5E /* StoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTests.swift; sourceTree = "<group>"; };
+		D158492CFB91D20B0C4C4BA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6D83E921E9CDEF3034F55D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE2A61B6839BD5F4F519BA9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -42,6 +44,7 @@
 			isa = PBXGroup;
 			children = (
 				F6D83E921E9CDEF3034F55D3 /* AppDelegate.swift */,
+				D158492CFB91D20B0C4C4BA2 /* Assets.xcassets */,
 				0B5632F5D9C2B4AFD25FA426 /* HistoryView.swift */,
 				FE2A61B6839BD5F4F519BA9A /* Info.plist */,
 				24B3E106F4F8584025D0D1C1 /* main.swift */,
@@ -103,6 +106,7 @@
 			buildConfigurationList = 68D94158CF2474557D86C0AD /* Build configuration list for PBXNativeTarget "Magpie" */;
 			buildPhases = (
 				B68FCA56FEA15742558D5547 /* Sources */,
+				9C8BE836A46B789338C57761 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -153,6 +157,17 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C8BE836A46B789338C57761 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				342381E04642F15D25C7819A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		64110F08A9E209F80603909C /* Sources */ = {
