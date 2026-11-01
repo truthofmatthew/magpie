@@ -14,6 +14,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate, NSWind
     private var keyMonitor: Any?
     private var hotKey: EventHotKeyRef?
     private var countWatcher: AnyCancellable?
+    private var aboutWindow: NSWindow?
 
     func applicationDidFinishLaunching(_ notification: Notification) {
         // Unit tests run inside this app; don't start the real clipboard machinery for them.
@@ -219,18 +220,21 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate, NSWind
         store.prune()
     }
 
-    @objc private func showAbout() {
-        let link = "https://github.com/truthofmatthew/magpie"
-        let credits = NSMutableAttributedString(string: "A small clipboard history for your Mac.\n",
-                                                attributes: [.foregroundColor: NSColor.labelColor])
-        credits.append(NSAttributedString(string: "github.com/truthofmatthew/magpie", attributes: [.link: URL(string: link)!]))
-        credits.addAttribute(.font, value: NSFont.systemFont(ofSize: NSFont.smallSystemFontSize),
-                             range: NSRange(location: 0, length: credits.length))
-        let centered = NSMutableParagraphStyle()
-        centered.alignment = .center
-        credits.addAttribute(.paragraphStyle, value: centered, range: NSRange(location: 0, length: credits.length))
+    @objc func showAbout() {
+        if aboutWindow == nil {
+            let window = NSWindow(contentViewController: NSHostingController(rootView: AboutView()))
+            window.styleMask = [.titled, .closable, .fullSizeContentView]
+            window.titlebarAppearsTransparent = true
+            window.titleVisibility = .hidden
+            window.title = "About Magpie"
+            window.isMovableByWindowBackground = true
+            window.isReleasedWhenClosed = false
+            [.miniaturizeButton, .zoomButton].forEach { window.standardWindowButton($0)?.isHidden = true }
+            window.center()
+            aboutWindow = window
+        }
         NSApp.activate()
-        NSApp.orderFrontStandardAboutPanel(options: [.credits: credits])
+        aboutWindow?.makeKeyAndOrderFront(nil)
     }
 
     @objc private func toggleLogin() {
