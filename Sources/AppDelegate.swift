@@ -189,6 +189,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate, NSWind
         login.state = SMAppService.mainApp.status == .enabled ? .on : .off
         menu.addItem(withTitle: "Clear History…", action: #selector(clearHistory), keyEquivalent: "")
         menu.addItem(.separator())
+        menu.addItem(withTitle: "About Magpie", action: #selector(showAbout), keyEquivalent: "")
         menu.addItem(withTitle: "Quit Magpie", action: #selector(NSApp.terminate(_:)), keyEquivalent: "q")
         for item in menu.items where item.action != #selector(NSApp.terminate(_:)) { item.target = self }
     }
@@ -216,6 +217,20 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate, NSWind
         Settings.maxItems = size
         store.maxItems = size
         store.prune()
+    }
+
+    @objc private func showAbout() {
+        let link = "https://github.com/truthofmatthew/magpie"
+        let credits = NSMutableAttributedString(string: "A small clipboard history for your Mac.\n",
+                                                attributes: [.foregroundColor: NSColor.labelColor])
+        credits.append(NSAttributedString(string: "github.com/truthofmatthew/magpie", attributes: [.link: URL(string: link)!]))
+        credits.addAttribute(.font, value: NSFont.systemFont(ofSize: NSFont.smallSystemFontSize),
+                             range: NSRange(location: 0, length: credits.length))
+        let centered = NSMutableParagraphStyle()
+        centered.alignment = .center
+        credits.addAttribute(.paragraphStyle, value: centered, range: NSRange(location: 0, length: credits.length))
+        NSApp.activate()
+        NSApp.orderFrontStandardAboutPanel(options: [.credits: credits])
     }
 
     @objc private func toggleLogin() {
