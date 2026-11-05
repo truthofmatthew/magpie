@@ -222,7 +222,11 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate, NSWind
 
     @objc func showAbout() {
         if aboutWindow == nil {
-            let window = NSWindow(contentViewController: NSHostingController(rootView: AboutView()))
+            let controller = NSHostingController(rootView: AboutView())
+            controller.sizingOptions = []  // otherwise SwiftUI resizes it later and adds the title bar height
+            let window = NSWindow(contentViewController: controller)
+            // Size it now, not lazily, so centering below uses the real size.
+            window.setContentSize(controller.sizeThatFits(in: NSSize(width: 430, height: 10_000)))
             window.styleMask = [.titled, .closable, .fullSizeContentView]
             window.titlebarAppearsTransparent = true
             window.titleVisibility = .hidden
@@ -230,11 +234,18 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate, NSWind
             window.isMovableByWindowBackground = true
             window.isReleasedWhenClosed = false
             [.miniaturizeButton, .zoomButton].forEach { window.standardWindowButton($0)?.isHidden = true }
-            window.center()
             aboutWindow = window
         }
+        guard let window = aboutWindow else { return }
+        // Dead center of the screen you're on; NSWindow.center() sits a bit above the middle.
+        let mouse = NSEvent.mouseLocation
+        if let screen = NSScreen.screens.first(where: { $0.frame.contains(mouse) }) ?? NSScreen.main {
+            let bounds = screen.visibleFrame
+            window.setFrameOrigin(NSPoint(x: bounds.midX - window.frame.width / 2,
+                                          y: bounds.midY - window.frame.height / 2))
+        }
         NSApp.activate()
-        aboutWindow?.makeKeyAndOrderFront(nil)
+        window.makeKeyAndOrderFront(nil)
     }
 
     @objc private func toggleLogin() {
